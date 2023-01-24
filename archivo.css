@@ -1,27 +1,27 @@
 header{
-background: #f5ddea;
-color:  #ffffff;
-}
-.main {
-background: #f5cdee;
-}
-.color1{
-background: #34495e;
-color: #ffffff;
-}
-aside{
-background: #c0392b;
-color: #ffffff;
-}
-footer{
-background: #d9f8f2;
-color: #181717;
-}
-head{
-   background: #7facda;
+   background: #f2bed9;
+   color:  #ffffff;
+   }
+   main {
+   background: #f9d5f2;
+   }
+   color1{
+   background: #9eb1c4;
    color: #ffffff;
-}
-
+   }
+   aside{
+   background: #c0392b;
+   color: #ffffff;
+   }
+   footer{
+   background: #b7bab9;
+   color: #181717;
+   }
+   head{
+      background: #7facda;
+      color: #ffffff;
+   }
+   
 
 
 
