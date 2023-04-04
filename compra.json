@@ -1,0 +1,12 @@
+{
+  "compra": [
+    {
+      "id": "",
+      "cantidad":"",
+      "precio_neto":"",
+      "porcentaje_descuento": "",
+      "costo_envio":"",
+      "id_producto":"",
+      "id_cliente":""
+    }
+  ]}

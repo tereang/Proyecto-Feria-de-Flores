@@ -1,0 +1,16 @@
+{
+  "cliente": [
+    {
+      "id": "",
+      "nombre":"",
+      "correo":"",
+      "contraseña":"",
+      "telefono":"",
+      "fecha_nacinmiento":"",
+      "genero":"" 
+    }
+  ]}
+
+
+
+  

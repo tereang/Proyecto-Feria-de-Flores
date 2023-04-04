@@ -1,0 +1,13 @@
+{
+  "despacho": [
+    {
+      "id": "",
+      "domicilio_entrega":"",
+      "horario_entrega":"",
+      "receptor": "",
+      "estado":"",
+      "observaciones":"",
+      "id_cliente":"",
+      "id_compra":"" 
+    }
+  ]}

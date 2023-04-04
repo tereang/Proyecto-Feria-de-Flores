@@ -22,7 +22,7 @@
       "imagen":"imagenes/rosas-rojas.jpg"
     },
     {
-      "id": "cm1",
+      "id": "cmf1",
       "nombre":"Centro de Mesa Flores Mixtas",
       "descripcion":"Centro de mesa y mix de flores",
       "precio": 14900,
@@ -89,7 +89,7 @@
       "nombre":"Arreglo Mini Claveles",
       "descripcion":"Colorida cesta de claveles amarillos",
       "precio": 29900,
-      "imagen":"imagenes/arreglo-mini-claveles.jpg"
+      "imagen":"imagenes/arreglo-mini-clavel.jpg"
     },
     {
       "id": "aa1",
@@ -131,7 +131,7 @@
       "nombre":"Ramo Rosas Circular",
       "descripcion":"Elegante ramo rosas rojas",
       "precio": 42900,
-      "imagen":"imagenes/ramo.rosas-circular.jpg"
+      "imagen":"imagenes/ramo-rosas-circular.jpg"
     }
   ]
 }

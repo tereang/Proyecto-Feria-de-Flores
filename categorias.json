@@ -1,0 +1,137 @@
+{
+  "categorias": [
+    {
+      "id": "mb1",
+      "nombre":"Mini Bouquet",
+      "descripcion":"Colorido mix de flores",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "ci1",
+      "nombre":"Cucurucho Ilusión",
+      "descripcion":"Hermosos botones Rosas amarillas",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "rr1",
+      "nombre":"Ramo Rosas rojas",
+      "descripcion":"Seis bellas Rosas rojas",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "cmf1",
+      "nombre":"Centro de Mesa Flores Mixtas",
+      "descripcion":"Centro de mesa y mix de flores",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "cm1",
+      "nombre":"Cucurucho Maravillas",
+      "descripcion":"Seis luminosas Maravillas y hojas",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "rc1",
+      "nombre":"Ramo colores Liliums",
+      "descripcion":"Alegre ramo colores Liliums",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "ca1",
+      "nombre":"Cucurucho Alstromerias",
+      "descripcion":"Colorido cucurucho mix Alstromerias",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "ctr1",
+      "nombre":"Cucurucho Tulipanes Rojos",
+      "descripcion":"Cucurucho Tulipanes color a elección",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "rl1",
+      "nombre":"Ramo Lisianthus",
+      "descripcion":"Ramo Lisianthus primaveral",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "rg1",
+      "nombre":"Ramo Gerberas",
+      "descripcion":"Ramo Gerberas mixtas",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "afb1",
+      "nombre":"Arreglo Flores Blancas",
+      "descripcion":"Arreglo en florero de flores blancas",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "afr1",
+      "nombre":"Arreglo Flores Rosadas",
+      "descripcion":"Arreglo en florero de flores rosadas",
+      "es_activa": ""
+     
+    },
+    {
+      "id": "amc1",
+      "nombre":"Arreglo Mini Claveles",
+      "descripcion":"Colorida cesta de claveles amarillos",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "aa1",
+      "nombre":"Arreglo Aniversario",
+      "descripcion":"Hermosa caja cintas y rosas",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "an1",
+      "nombre":"Arreglo Nacimiento",
+      "descripcion":"Arreglo flores mixtas y peluche",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "cg1",
+      "nombre":"Caja Girasoles",
+      "descripcion":"Elegante caja con seis girasoles",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "ce1",
+      "nombre":"Canasto Enamorados",
+      "descripcion":"Florido Canasto cintas y globo",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "arb1",
+      "nombre":"Arreglo Rosas Blancas",
+      "descripcion":"Pequeña cesta rosas blancas",
+      "es_activa": ""
+      
+    },
+    {
+      "id": "rrc1",
+      "nombre":"Ramo Rosas Circular",
+      "descripcion":"Elegante ramo rosas rojas",
+      "es_activa": ""
+      
+    }
+  ]
+}
