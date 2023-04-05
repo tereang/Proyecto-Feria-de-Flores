@@ -1,4 +1,4 @@
-function Producto(id, nombre, descripcion, precio, imagen, id_categoria, es_destacada, precio_oferta, stock, sku){
+function Ramo(id, nombre, descripcion, precio, imagen, id_categoria, es_destacada, precio_oferta, stock, sku){
   this.id = id;
   this.nombre = nombre;
   this.descripcion = descripcion;
