@@ -33,9 +33,9 @@ app.set('views engine','hbs')
 app.get ('/', async function(req, res){
 
   
-  const results = await pool.query('SELECT * FROM ramo');
+  const results = await pool.query('SELECT * FROM ramo where stock >0 order by precio asc');
   const ramos = {ramo:results.rows} 
-  res.render("index.hbs",ramos)
+  res.render("index.hbs",ramos) 
   //console.table(results.rows);
 });
 
