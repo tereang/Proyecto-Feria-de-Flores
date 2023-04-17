@@ -39,6 +39,27 @@ app.get ('/', async function(req, res){
   //console.table(results.rows);
 });
 
+//boton para ver stock en ramo
+const express = require('express');							
+const router = express.Router();							
+const db = require('../db');							
+							
+router.get('/', (req, res) => {							
+    db.query('SELECT * FROM ramo WHERE stock > 0 ORDER BY precio ASC', (err, results) => {							
+        if (err) {							
+            console.log(err);							
+            res.status(500).send('Error al obtener los datos');							
+        } else {							
+            res.render('index', {ramos: results});							
+        }							
+    });							
+});							
+							
+module.exports = router;							
+
+
+
+
 //app.get ('/datos', function(req, res){
  // fetch("C:\Javascript\tareas-pasadas\Proyecto-Feria-de-Flores\ramo.json",{ 
  //   headers: { 'Content-Type': "application/json"},
