@@ -34,8 +34,9 @@
 
   <body>
     {{>navbar}}
-    {{>header}}
     {{>boton_consulta}}
+    {{>header}}
+
 
     <main>
       {{>carrousel}}
@@ -43,8 +44,49 @@
       <br>
       <br>
       <br>
-     
-      <div class="container">
+
+      <div class="row row-cols-1 row-cols-md-3 g-6">
+        <div class="col">
+          <div class="card">
+            <img src="imagenes/mix-silvestres.jpeg" class="card-img-top"
+              alt="Galeria Imágen">
+            <div class="card-body">
+              <h5 class="card-title" style="background-color: rgb(243, 190,
+                218);">¿Qué producen las flores en las personas?</h5>
+              <p class="card-text" style="background-color: rgb(243, 190,
+                218);">Ellas tienen un impacto inmediato en
+                la felicidad. Todas las personas
+                presentan “verdaderas” sonrisas al recibir flores,
+                demostrando placer y gratitud
+                extraordinarios. Esta reacción es universal y se presenta en
+                todos los grupos de edad. A largo
+                plazo, las flores tienen un efecto positivo en el humor.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imagenes/cerezo-blanco.jpeg" class="card-img-top"
+              alt="Galería Imágen">
+            <div class="card-body">
+              <h5 class="card-title" style="background-color:rgb(243, 190,
+                218);">¿Qué significa una flor en lo espiritual?</h5>
+              <p class="card-text" style="background-color: rgb(243, 190,
+                218);">La conexión con las flores es una
+                manera de restablecer el contacto con
+                la
+                naturaleza. Dejándonos impresionar por su belleza nos sentimos
+                parte de un mundo maravilloso.
+                Así,
+                el impacto de las flores tiene que ver con su belleza. Pero lo
+                bello, es porque nos transmite
+                algún
+                mensaje.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--<div class="container">
         <section class="row">
           <div class="col-6">
             <section class="row">
@@ -82,162 +124,176 @@
              </div>
           </div>
         </section>
-      </div>
-
-      <br>
-      <div class="card">
-  <div class="card-header" style="background-color: rgb(243, 190, 218);">
-    Cita
-  </div>
-  <div class="card-body" style="background-color: rgb(243, 190, 218);">
-    <blockquote class="blockquote mb-0" style="background-color: rgb(243, 190, 218);">
-      <p>«PODRÁN CORTAR TODAS LAS FLORES, PERO NO PODRÁN DETENER LA PRIMAVERA»</p>
-      <footer class="blockquote-footer">Pablo Neruda <cite title="Source Title">Fuente</cite></footer>
-    </blockquote>
-  </div>
-</div>
-          
-      <section id=galeria class="container-fluid">
-        <div class="text-center pt-5">
-          <h2 class="bg-#f9d5f2;">Galería<small></small></h2>
-          <h3 class="bg-#f9d5f2;"> Hermosos arreglos florales para regalar<samall></samall>
-          </h3>
+      </div>-->
+        <br>
+        <div class="row row-cols-1 row-cols-md-2 g-8">
+          <div class="col">
+            <div class="card">
+              <div class="card-header" style="background-color: rgb(243, 190,
+                218);">
+                Cita
+              </div>
+              <div class="card-body" style="background-color: rgb(243, 190,
+                218);">
+                <blockquote class="blockquote mb-0" style="background-color:
+                  rgb(243, 190, 218);">
+                  <p>«PODRÁN CORTAR TODAS LAS FLORES, PERO NO PODRÁN DETENER LA
+                    PRIMAVERA»</p>
+                  <footer class="blockquote-footer">Pablo Neruda <cite
+                      title="Source Title">/Origen Fuente</cite></footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row">
-        
-           {{#each ramo}}
 
-<div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="col d-flex justify-content-center mb-4">
-                      <div class="card shadow mb-1 bg-secondary ro
-                      unded"
-                        style="width: 20 rem;border-radius :10px ;">
-                        <h5 class="card-title pt-2 text-center text-primary">{{this.nombre}}
-                          </h5>
-                        
-                        <img src="{{this.imagen}}" 
-                          class="card-img-top" alt="Galeria Imágen">
-                        <div class="card-body">
-                          <p class="card text text-dark-50 description"> {{this.descripcion}}
-                            <h5 class="text-black">Precio: <span class="precio">{{this.precio}}
-                                </span></h5>
-                            <div class="d-grid gap-2">
-                              <button class="btn btn-primary button">Añadir
-                                Carrito</button>
-                            </div>
-                          </div>
-                        </div>
+
+
+
+
+
+        <section id=galeria class="container-fluid">
+          <div class="text-center pt-5">
+            <h2 class="bg-#f9d5f2;">Galería<small></small></h2>
+            <h3 class="bg-#f9d5f2;"> Hermosos arreglos florales para regalar<samall></samall>
+            </h3>
+          </div>
+       <div class="row">
+
+            {{#each ramo}}
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-secondary ro
+                  unded"
+                  style="width: 20 rem;border-radius :10px ;">
+                  <h5 class="card-title pt-2 text-center text-primary">{{this.nombre}}
+                  </h5>
+
+                  <img src="{{this.imagen}}"
+                    class="card-img-top" alt="Galeria Imágen">
+                  <div class="card-body">
+                    <p class="card text text-dark-50 description">
+                      {{this.descripcion}}
+                      <h5 class="text-black">Precio: <span class="precio">{{this.precio}}
+                        </span></h5>
+                      <div class="d-grid gap-2">
+                        <button class="btn btn-primary button">Añadir
+                          Carrito</button>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
 
-{{/each}}
-        
-                    </section>
+              {{/each}}
 
-                    <br>
-                    <div class="container">
-                      <section class="row">
-                        <h3>Conoce más de nosotros y síguenos</h3>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <div class="col-6">
-                          <section class="row">
-                            <h6>Quiénes Somos</h6>
-                            <h6><em>Somos una empresa con años de experiencia en
-                                la comercialización de flores de corte y
-                                arreglos
-                                florales.Nuestra misión es producir arreglos y
-                                ramos con flores de calidad.
-                                <hr>Nuestro sitio esta enfocado para la atención
-                                de clientes 100% online, es por ello que esta
-                                plataforma de compra esta hecha de manera tal
-                                que el cliente puedo comprar sin asistencia,
-                                contando
-                                ademas con WEBPAY PLUS donde puedes pagar con
-                                tus tarjetas de débito o crédito de manera
-                                segura y
-                                confiable.
-                                <hr>Te invitamos a conocer nuestros servicios,
-                                te garantizamos una excelente experiencia.
-                              </em></h6>
-                          </section>
+            </section>
+
+            <br>
+            <div class="container">
+              <section class="row">
+                <h3>Conoce más de nosotros y síguenos</h3>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="col-6">
+                  <section class="row">
+                    <h6>Quiénes Somos</h6>
+                    <h6><em>Somos una empresa con años de experiencia en
+                        la comercialización de flores de corte y
+                        arreglos
+                        florales.Nuestra misión es producir arreglos y
+                        ramos con flores de calidad.
+                        <hr>Nuestro sitio esta enfocado para la atención
+                        de clientes 100% online, es por ello que esta
+                        plataforma de compra esta hecha de manera tal
+                        que el cliente puedo comprar sin asistencia,
+                        contando
+                        ademas con WEBPAY PLUS donde puedes pagar con
+                        tus tarjetas de débito o crédito de manera
+                        segura y
+                        confiable.
+                        <hr>Te invitamos a conocer nuestros servicios,
+                        te garantizamos una excelente experiencia.
+                      </em></h6>
+                  </section>
+                </div>
+                <div class="col-6">
+                  <section class="row">
+                    <h5>Inicia Sesión</h5>
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control"
+                          id="inputEmail4" placeholder="Ingrese su
+                          Email">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control"
+                          id="inputPassword4" placeholder="Ingrese
+                          Password">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputAddress" class="form-label">Domicilio</label>
+                        <input type="text" class="form-control"
+                          id="inputAddress" placeholder="Ingrese su
+                          domicilio">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control"
+                          id="inputCity" placeholder="Ingrese Ciudad">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputState" class="form-label">Comuna</label>
+                        <input type="text" class="form-control"
+                          placeholder="Ingrese Comuna">
+                        <option selected></option>
+                        <option></option>
+
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input"
+                            type="checkbox" id="gridCheck">
+                          <label class="form-check-label"
+                            for="gridCheck">
+                            Confirmar
+                          </label>
                         </div>
-                        <div class="col-6">
-                          <section class="row">
-                            <h5>Inicia Sesión</h5>
-                            <form class="row g-3">
-                              <div class="col-md-6">
-                                <label for="inputEmail4" class="form-label">Email</label>
-                                <input type="email" class="form-control"
-                                  id="inputEmail4" placeholder="Ingrese su
-                                  Email">
-                              </div>
-                              <div class="col-md-6">
-                                <label for="inputPassword4" class="form-label">Password</label>
-                                <input type="password" class="form-control"
-                                  id="inputPassword4" placeholder="Ingrese
-                                  Password">
-                              </div>
-                              <div class="col-12">
-                                <label for="inputAddress" class="form-label">Domicilio</label>
-                                <input type="text" class="form-control"
-                                  id="inputAddress" placeholder="Ingrese su
-                                  domicilio">
-                              </div>
-                              <div class="col-md-6">
-                                <label for="inputCity" class="form-label">Ciudad</label>
-                                <input type="text" class="form-control"
-                                  id="inputCity" placeholder="Ingrese Ciudad">
-                              </div>
-                              <div class="col-md-6">
-                                <label for="inputState" class="form-label">Comuna</label>
-                                <input type="text" class="form-control"
-                                  placeholder="Ingrese Comuna">
-                                <option selected></option>
-                                <option></option>
-
-                              </div>
-                              <div class="col-12">
-                                <div class="form-check">
-                                  <input class="form-check-input"
-                                    type="checkbox" id="gridCheck">
-                                  <label class="form-check-label"
-                                    for="gridCheck">
-                                    Confirmar
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-12">
-                                <button type="submit" class="btn btn-primary">Enviar</button>
-                              </div>
-                            </form>
-                          </section>
-                        </div>
-                      </section>
-                    </div>
-                    <br>
-                    <br>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                      </div>
+                    </form>
+                  </section>
+                </div>
+              </section>
+            </div>
+            <br>
+            <br>
 
 
 
-                    {{>footer}}
+            {{>footer}}
 
 
-                    <!-- Optional JavaScript; choose one of the two! -->
+            <!-- Optional JavaScript; choose one of the two! -->
 
-                    <!-- Option 1: Bootstrap Bundle with Popper -->
-                    <script
-                      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-                      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-                      crossorigin="anonymous"></script>
+            <!-- Option 1: Bootstrap Bundle with Popper -->
+            <script
+              src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+              crossorigin="anonymous"></script>
 
-                    <!-- Option 2: Separate Popper and Bootstrap JS -->
-                    <!--
+            <!-- Option 2: Separate Popper and Bootstrap JS -->
+            <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-                  </body>
+          </body>
 
-                </html>
+        </html>

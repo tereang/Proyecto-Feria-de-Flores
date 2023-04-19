@@ -4,11 +4,11 @@
 	<title></title>	
 </head>			
 <body>			
-	<form'method'='GET'	action="/">	
-	<button'type'='submit'	name='boton_consulta'>Consulta</button>	
+	<form method = 'GET'	action ='/'>	
+	<button type = 'submit'	name = 'boton_consulta'>Consulta</button>	
 	</form>		
 			
-	{{'#if'ramos}}		
+	{{#if ramos}}		
 		<table>			
 			<thead>			
 				<tr>			
@@ -19,7 +19,7 @@
 				</tr>			
 			</thead>			
 			<tbody>			
-				{{'#each'	ramos}}		
+				{{#each	ramos}}		
 					<tr>			
 						<td>{{this.id}}</td>			
 						<td>{{this.nombre}}</td>			
