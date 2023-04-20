@@ -9,9 +9,9 @@ function renderizarCarrito() {
   // Generamos los Nodos a partir de carrito
   carritoSinDuplicados.forEach((item) => {
       // Obtenemos el item que necesitamos de la variable base de datos
-      const miItem = baseDeDatos.filter((itemBaseDatos) => {
+      const miItem = feria_de_flores.filter((itemFeria_de_flores) => {
           // ¿Coincide las id? Solo puede existir un caso
-          return itemBaseDatos.id === parseInt(item);
+          return itemFeria_de_flores.id === parseInt(item);
       });
       // Cuenta el número de veces que se repite el producto
       const numeroUnidadesItem = carrito.reduce((total, itemId) => {

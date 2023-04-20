@@ -5,7 +5,7 @@ function calcularTotal() {
   // Recorremos el array del carrito 
   return carrito.reduce((total, item) => {
       // De cada elemento obtenemos su precio
-      const miItem = ramo.filter((itemFeria_de_flores) => {
+      const miItem = ramos.filter((itemFeria_de_flores) => {
           return itemFeria_de_flores.id === parseInt(item);
       });
       // Los sumamos al total

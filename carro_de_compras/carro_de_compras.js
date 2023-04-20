@@ -34,7 +34,7 @@ function renderizarRamos() {
       miNodoBoton.classList.add('btn', 'btn-primary');
       miNodoBoton.textContent = '+';
       miNodoBoton.setAttribute('marcador', info.id);
-      miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
+      miNodoBoton.addEventListener('click', agregarRamosAlCarrito);
       // Insertamos
       miNodoCardBody.appendChild(miNodoImagen);
       miNodoCardBody.appendChild(miNodoTitle);
