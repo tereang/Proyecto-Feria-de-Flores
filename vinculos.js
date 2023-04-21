@@ -1,4 +1,4 @@
-const express = require ("express")
+/*const express = require ("express")
 const hbs = require ("hbs")
 const fs = require ("fs")
 const { error } = require("console")
@@ -31,5 +31,5 @@ app.get ('/', async function(req, res){
 
 app.listen(port, () => {
   console.log  (`servidor en puerto ${port}`)
-})
+})*/
 
