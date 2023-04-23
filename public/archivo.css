@@ -3,7 +3,8 @@ header{
    color:  #ffffff;
    }
    main {
-   background: #f9d5f2;
+   background: #f2bed9;
+   color: #181717;;
    }
    color1{
    background: #9eb1c4;
@@ -20,6 +21,10 @@ header{
    head{
       background: #7facda;
       color: #ffffff;
+   }
+   navbar{
+      background:#9eb1c4 ;
+      color: #181717;
    }
    
 
