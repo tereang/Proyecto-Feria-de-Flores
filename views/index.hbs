@@ -31,38 +31,38 @@
         <!-- Line Icons -->
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <!-- Bootstrap 4 Default CSS -->
-  <link rel="stylesheet" href="https:maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="https:use.fontawesome.com/releases/v5.1.0/css/all.css"
-    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <!-- Additional CSS -->
-  <link rel="stylesheet" href="./css/estilos.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./main.css.map">
-  <link rel="stylesheet" href="./main.scss">
-  <script src="/js/confirmacion.js"></script>
-  <script src="/js/main_carro.js"></script>
-  <script src="/js/contacto_carro.js"></script>
-  <script src="/js/galeria_carro.js"></script>
-  <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- Invoice Style -->
-  <link rel="stylesheet" href="/css/style.css" media="all" />
-
-  <!-- Animate CSS -->
-  <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link href="https:cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https:cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Line Icons -->
-  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https:maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https:use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Invoice Style -->
+    <link rel="stylesheet" href="/css/style.css" media="all" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https:cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https:cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Line Icons -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <!-- section carro de compras-->
+    <nav id="nav"></nav>
+    <section id="product-grid"></section>
+    <section id="product-detail"></section>
+    <section id="cart"></section>
+    <section id="checkout"></section>
+    <script src="js/app.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"
+    ></script>
     </head>
 
-  <body>
-    {{>navbar}}
-    {{>boton_consulta}}
-    {{>header}}
+    <body>
+       {{>nav}}
+       {{>boton_consulta}}
+       {{>header}}
 
 
     <main>
@@ -73,58 +73,38 @@
       <br>
       
       
-      <!--<div class="row row-cols-12">
-        <div class="col">
-          <div class="card">
-            <img src="imagenes/mujer-flores.jpg" class="card-img-top"
-              alt="Galeria Imágen"width="200" height="350" >
-            <div class="card-body" style="background-color: rgb(243, 190,
-                218);border-radius :10px ">
-              <h5 class="card-title" >¿Qué producen las flores en las personas?</h5>
-              <p class="card-text" >Ellas tienen un impacto inmediato en
-                la felicidad. Todas las personas
-                presentan “verdaderas” sonrisas al recibir flores,
-                demostrando placer y gratitud
-                extraordinarios. Esta reacción es universal y se presenta en
-                todos los grupos de edad. A largo
-                plazo, las flores tienen un efecto positivo en el humor.</p>
-            </div>
+    <!-- <div class="row row-cols-12">
+          <div class="col">
+             <div class="card">
+                 <img src="imagenes/mujer-flores.jpg" class="card-img-top"
+                 alt="Galeria Imágen"width="200" height="350" >
+                 <div class="card-body" style="background-color: rgb(243, 190,218);border-radius :10px ">
+                    <h5 class="card-title" >¿Qué producen las flores en las personas?</h5>
+                    <p class="card-text" >Ellas tienen un impacto inmediato en la felicidad. Todas las personas presentan “verdaderas” sonrisas al recibir flores,demostrando placer y gratitud extraordinarios. 
+                                          Esta reacción es universal y se presenta en todos los grupos de edad. A largo plazo, las flores tienen un efecto positivo en el humor.</p>
+                 </div>
+             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="imagenes/cerezo-blanco.jpeg" class="card-img-top"
-              alt="Galería Imágen" width="500" height="350">
-            <div class="card-body" style="background-color: rgb(243, 190,
-                218);border-radius :10px ">
-              <h5 class="card-title" >¿Qué significa una flor en lo espiritual?</h5>
-              <p class="card-text" >La conexión con las flores es una
-                manera de restablecer el contacto con
-                la
-                naturaleza. Dejándonos impresionar por su belleza nos sentimos
-                parte de un mundo maravilloso.
-                Así,
-                el impacto de las flores tiene que ver con su belleza. Pero lo
-                bello, es porque nos transmite
-                algún
-                mensaje.</p>
-            </div>
-          </div>
-        </div>
-        </div>-->
-        <!--<div class="container">
+         <div class="col">
+             <div class="card">
+               <img src="imagenes/cerezo-blanco.jpeg" class="card-img-top"
+               alt="Galería Imágen" width="500" height="350">
+               <div class="card-body" style="background-color: rgb(243, 190,218);border-radius :10px ">
+                   <h5 class="card-title" >¿Qué significa una flor en lo espiritual?</h5>
+                   <p class="card-text" >La conexión con las flores es una manera de restablecer el contacto con la naturaleza. Dejándonos impresionar por su belleza nos sentimos parte de un mundo maravilloso.
+                                         Así,el impacto de las flores tiene que ver con su belleza. Pero lo bello, es porque nos transmite algún mensaje.</p>
+               </div>
+             </div>
+         </div>
+    </div>-->
+    <!--<div class="container">
         <section class="row">
           <div class="col-6">
             <section class="row">
               <div class="box">
-                   <h5>¿Qué producen las flores en las personas?</h5>
-                   <h5 class="lead" ><strong><em>Ellas tienen un impacto inmediato en
-                    la felicidad. Todas las personas
-                    presentan “verdaderas” sonrisas al recibir flores,
-                    demostrando placer y gratitud
-                    extraordinarios. Esta reacción es universal y se presenta en
-                    todos los grupos de edad. A largo
-                    plazo, las flores tienen un efecto positivo en el humor.
+                    <h5>¿Qué producen las flores en las personas?</h5>
+                    <h5 class="lead" ><strong><em>Ellas tienen un impacto inmediato en la felicidad. Todas las personas presentan “verdaderas” sonrisas al recibir flores,demostrando placer y gratitud extraordinarios. 
+                    Esta reacción es universal y se presenta en todos los grupos de edad. A largo plazo, las flores tienen un efecto positivo en el humor.
                     </strong>
                   </em>
                 </h5>
@@ -134,16 +114,8 @@
           <div class="col-6">
              <div class="box">
                  <h5>¿Qué significa una flor en lo espiritual?</h5>
-                 <h5 class="lead"><strong><em>La conexión con las flores es una
-                  manera de restablecer el contacto con
-                  la
-                  naturaleza. Dejándonos impresionar por su belleza nos sentimos
-                  parte de un mundo maravilloso.
-                  Así,
-                  el impacto de las flores tiene que ver con su belleza. Pero lo
-                  bello, es porque nos transmite
-                  algún
-                  mensaje.
+                 <h5 class="lead"><strong><em>La conexión con las flores es una manera de restablecer el contacto con la naturaleza. Dejándonos impresionar por su belleza nos sentimos parte de un mundo maravilloso.
+                  Así,el impacto de las flores tiene que ver con su belleza. Pero lo bello, es porque nos transmite algún mensaje.
                   </strong>
                  </em>
                </h5>
@@ -152,73 +124,66 @@
         </section>
       </div>-->
         <br>
-        <div class="row row-cols-12">
-          <div class="col">
-            <div class="card">
-              <div class="card-header" style="background-color: rgb(243, 190,
-                218);">
+    <div class="row row-cols-12">
+      <div class="col">
+        <div class="card">
+          <div class="card-header" style="background-color: rgb(243, 190,218);">
                 Cita
-              </div>
-              <div class="card-body" style="background-color: rgb(243, 190,
-                218);">
-                <blockquote class="blockquote mb-0" style="background-color:
-                  rgb(243, 190, 218);">
-                  <p>«PODRÁN CORTAR TODAS LAS FLORES, PERO NO PODRÁN DETENER LA
-                    PRIMAVERA»</p>
+          </div>
+              <div class="card-body" style="background-color: rgb(243, 190,218);">
+                <blockquote class="blockquote mb-0" style="background-color:rgb(243, 190, 218);">
+                  <p>«PODRÁN CORTAR TODAS LAS FLORES, PERO NO PODRÁN DETENER LA PRIMAVERA»</p>
                   <footer class="blockquote-footer">Pablo Neruda <cite
                       title="Source Title">/Origen Fuente</cite></footer>
                 </blockquote>
               </div>
             </div>
-          </div>
-        </div>
+      </div>
+    </div>
 
 
 
 
 
 
-        <section id=galeria class="container-fluid">
-          <div class="text-center pt-5">
+   <section id=galeria class="container-fluid">
+      <div class="text-center pt-5">
             <h2 class="bg-#f9d5f2;">GALERIA<small></small></h2>
             <h3 class="bg-#f9d5f2;"> HERMOSOS ARREGLOS FLORALES PARA REGALAR<samall></samall>
             </h3>
-          </div>
-       <div class="row">
+      </div>
+     <div class="row">
 
             {{#each ramo}}
 
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="col d-flex justify-content-center mb-4">
-                <div class="card shadow mb-1 bg-secondary ro
-                  unded"
-                  style="width: 20 rem;border-radius :10px ;">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-secondary rounded"
+               style="width: 20 rem;border-radius :10px ;">
                   <h5 class="card-title pt-2 text-center text-primary">{{this.nombre}}
                   </h5>
 
-                  <img src="{{this.imagen}}"
-                    class="card-img-top" alt="Galeria Imágen">
-                  <div class="card-body">
-                    <p class="card text text-dark-50 description">
-                      {{this.descripcion}}
+                <img src="{{this.imagen}}"
+                class="card-img-top" alt="Galeria Imágen">
+                 <div class="card-body">
+                    <p class="card text text-dark-50 description">{{this.descripcion}}
                       <h5 class="text-black">Precio: <span class="precio">{{this.precio}}
-                        </span></h5>
+                      </span></h5>
                       <div class="d-grid gap-2">
-                        <button class="btn btn-primary button">Agregar
-                          Carrito</button>
+                        <button class="btn btn-primary button">Agregar Carrito</button>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                 </div>
+          </div>
+        </div>
+     </div>
 
               {{/each}}
 
-            </section>
+    </section>
 
             <br>
-            <div class="container">
-              <section class="row">
+    <div class="container">
+    <section class="row">
                 <h3>Conoce más de nosotros y síguenos</h3>
                 <br>
                 <br>
@@ -226,155 +191,110 @@
                 <br>
     <div class="row row-cols-4">
         <div class="col">
-          <div class="card" style="background-color: rgb(243, 190,
-                218);border-radius :10px ">
-            <img src="imagenes/mix-silvestres.jpeg" class="card-img-top"
-              alt="Galeria Imágen" width="150" height="120" >
-            <div class="card-body">
-              <h5 class="card-title" >Quiénes Somos</h5>
-              <p class="card-text" >Somos una empresa con años de experiencia en
-                        la comercialización de flores de corte y
-                        arreglos
-                        florales.Nuestra misión es producir arreglos y
-                        ramos con flores de calidad.
-                        Nuestro sitio esta enfocado para la atención
-                        de clientes 100% online, es por ello que esta
-                        plataforma de compra esta hecha de manera tal
-                        que el cliente puedo comprar sin asistencia,
-                        contando
-                        ademas con WEBPAY PLUS donde puedes pagar con
-                        tus tarjetas de débito o crédito de manera
-                        segura y
-                        confiable.Te invitamos a conocer nuestros servicios,
-                        te garantizamos una excelente experiencia.</p>
-            </div>
+          <div class="card" style="background-color: rgb(243, 190,218);border-radius :10px ">
+                  <img src="imagenes/mix-silvestres.jpeg" class="card-img-top"
+                  alt="Galeria Imágen" width="150" height="120" >
+              <div class="card-body">
+                  <h5 class="card-title" >Quiénes Somos</h5>
+                  <p class="card-text" >Somos una empresa con años de experiencia en la comercialización de flores de corte y arreglos florales.Nuestra misión es producir arreglos y ramos con flores de calidad.
+                                        Nuestro sitio esta enfocado para la atención de clientes 100% online, es por ello que esta plataforma de compra esta hecha de manera tal que el cliente puedo comprar sin asistencia,
+                                        contando ademas con WEBPAY PLUS donde puedes pagar con tus tarjetas de débito o crédito de manera segura y confiable.Te invitamos a conocer nuestros servicios,te garantizamos una excelente experiencia.</p>
+              </div>
           </div>
         </div>
+    
 
-
-                <!--<div class="col-6">
-                  <section class="row">
-                    <h6>Quiénes Somos</h6>
-                    <h6><em>Somos una empresa con años de experiencia en
-                        la comercialización de flores de corte y
-                        arreglos
-                        florales.Nuestra misión es producir arreglos y
-                        ramos con flores de calidad.
-                        <hr>Nuestro sitio esta enfocado para la atención
-                        de clientes 100% online, es por ello que esta
-                        plataforma de compra esta hecha de manera tal
-                        que el cliente puedo comprar sin asistencia,
-                        contando
-                        ademas con WEBPAY PLUS donde puedes pagar con
-                        tus tarjetas de débito o crédito de manera
-                        segura y
-                        confiable.
-                        <hr>Te invitamos a conocer nuestros servicios,
-                        te garantizamos una excelente experiencia.
-                      </em></h6>
-                  </section>
-                </div>-->
-              <form class="login-form"  action="miurl" method="post"></form>
-                <div class="col-8">
-                  <section class="row">
+    <!--<div class="col-6">
+            <section class="row">
+             <h6>Quiénes Somos</h6>
+                    <h6><em>Somos una empresa con años de experiencia en la comercialización de flores de corte y arreglos florales.Nuestra misión es producir arreglos y ramos con flores de calidad.
+                        <hr>Nuestro sitio esta enfocado para la atención de clientes 100% online, es por ello que esta plataforma de compra esta hecha de manera tal que el cliente puedo comprar sin asistencia,
+                        contando ademas con WEBPAY PLUS donde puedes pagar con tus tarjetas de débito o crédito de manera segura y confiable.
+                        <hr>Te invitamos a conocer nuestros servicios, te garantizamos una excelente experiencia.
+                    </em></h6>
+            </section>
+         </div>-->
+       <form class="login-form"  action="miurl" method="post"></form>
+         <div class="col-8">
+              <section class="row">
                     <h5>Inicia Sesión</h5>
                     <form class="row g-3">
                       <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control"
-                          id="inputEmail4" placeholder="Ingrese su
-                          Email">
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Ingrese su Email">
                       </div>
-                      <div class="col-md-6">
+            <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Password</label>
-                        <input type="password" class="form-control"
-                          id="inputPassword4" placeholder="Ingrese
-                          Password">
-                      </div>
-                      <div class="col-12">
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Ingrese Password">
+            </div>
+                <div class="col-12">
                         <label for="inputAddress" class="form-label">Domicilio</label>
-                        <input type="text" class="form-control"
-                          id="inputAddress" placeholder="Ingrese su
-                          domicilio">
-                      </div>
-                      <div class="col-md-6">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese su domicilio">
+                </div>
+            <div class="col-md-6">
                         <label for="inputCity" class="form-label">Ciudad</label>
-                        <input type="text" class="form-control"
-                          id="inputCity" placeholder="Ingrese Ciudad">
-                      </div>
-                      <div class="col-md-6">
+                        <input type="text" class="form-control" id="inputCity" placeholder="Ingrese Ciudad">
+            </div>
+                <div class="col-md-6">
                         <label for="inputState" class="form-label">Comuna</label>
-                        <input type="text" class="form-control"
-                          placeholder="Ingrese Comuna">
+                        <input type="text" class="form-control" placeholder="Ingrese Comuna">
                         <option selected></option>
                         <option></option>
 
-                      </div>
-                      <div class="col-12">
-                        <div class="form-check">
-                          <input class="form-check-input"
-                            type="checkbox" id="gridCheck">
-                          <label class="form-check-label"
-                            for="gridCheck">
-                            Confirmar
+                </div>
+                  <div class="col-12">
+                     <div class="form-check">
+                           <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">Confirmar
                           </label>
-                        </div>
-                      </div>
+                     </div>
+                  </div>
                       <div class="col-12">
                         <button type="submit" class="btn btn-primary">Enviar</button>
                       </div>
                     </form>
                   </section>
-                </div>
-              </section>
-            </div>
+         </div>
+    </section>
+    </div>
             <br>
             <br>
-
-
-            
-
-
+                  
   
-
-     
-
-
-
             {{>footer}}
 
 
-            <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-            <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
             <script
               src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
               integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
               crossorigin="anonymous"></script>
 
-<!-- End of Container -->
+    <!-- End of Container -->
 
-  <!-- JQuery Plugin -->
-  <script src="https:ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- Bootstrap JQuery Plugin -->
-  <script src="https:maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- JQuery Plugin -->
+    <script src="https:ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap JQuery Plugin -->
+    <script src="https:maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-  <!-- SMTP JS -->
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- SMTP JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
-  <script src=" https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
 
-  <!-- Additional Javascript -->
-  <script type="text/javascript" src="./js/categoria_carro.js"></script>
-  <script type="text/javascript" src="./js/main_carro.js"></script>
-  <script type="text/javascript" src="./js/contacto_carro.js"></script>
+    <!-- Additional Javascript -->
+    <script type="text/javascript" src="./js/categoria_carro.js"></script>
+    <script type="text/javascript" src="./js/main_carro.js"></script>
+    <script type="text/javascript" src="./js/contacto_carro.js"></script>
 
-            <!-- Option 2: Separate Popper and Bootstrap JS -->
-            <!--
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-          </body>
+      </body>
 
-        </html>
+    </html>
