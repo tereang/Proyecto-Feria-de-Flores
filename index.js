@@ -45,12 +45,15 @@ app.get ('/', async function(req, res){
 //boton para ver stock en ramo
 
 				
-router.get('/', (req, res) => {							
-    pool.query('SELECT * FROM ramo WHERE stock > 0 ORDER BY precio ASC', (err, results) => {							
+router.get('/', (req, res) => {	
+  
+    pool.query('SELECT * FROM ramos INNER JOIN categorias on categorias.id = ramos.id_categoria WHERE stock > 0 and es_activa = TRUE	ORDER BY precio ASC', (err, results) => {							
         if (err) {							
             console.log(err);							
             res.status(500).send('Error al obtener los datos');							
-        } else {							
+        } else {	
+       
+          
             res.render('index.hbs', {ramos: results});							
         }							
     });							

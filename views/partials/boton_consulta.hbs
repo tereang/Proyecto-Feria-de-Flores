@@ -5,13 +5,14 @@
 </head>			
 <body>			
 	<form method = 'GET'	action ='/'>	
+  <div class="col-sm-6"><input class="form-control" type="text" id="inputNombre" placeholder="Buscar por Nombre..."></div>
 	<!--  <button class="btn btn-primary" type = 'submit'	 style = "border radius:  10px" name = 'boton_consulta' data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Consulta</button>	
 	</form>		-->
-	<div class="dropdown">
+	<!--<div class="dropdown">
   <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
     CONSULTA
   </a>
-  <div class="col-sm-6"><input class="form-control" type="text" id="inputNombre" placeholder="Buscar por Nombre..."></div>
+  
 <div class="constainer"><hr>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <li><a class="dropdown-item" href="#">ID</a></li>
@@ -19,7 +20,7 @@
     <li><a class="dropdown-item" href="#">STOCK</a></li>
     <li><a class="dropdown-item" href="#">PRECIO</a></li>
   </ul>
-</div>		
+</div>-->		
 	<table class="table table-success table-striped table-hover text-center mt-4 border border-light table" id="example">
     
         {{#if ramo}} 
@@ -28,6 +29,7 @@
             <tr class="bg-primary text-black border">
                 <th>id</th>               
                 <th>nombre</th> 
+                <th>descripcion</th>
                 <th>stock</th>
 								<th>precio</th>
             </tr>
@@ -38,6 +40,7 @@
             <tr>
              <td>{{this.id}}</td> 
              <td>{{this.nombre}}</td> 
+             <td>{{this.descripcion}}</td> 
              <td>{{this.stock}}</td>  
              <td>{{this.precio}}</td>  
                
