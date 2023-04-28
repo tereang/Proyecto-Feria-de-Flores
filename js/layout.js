@@ -48,8 +48,8 @@ export function Navbar() {
         </div>
         </div>
         </marquee> </a>
-        <a class="nav-link" href="#">Historias</a>
-        <a class="navbar-brand" href="#">Quiénes Somos</a>
+        <a class="nav-link" href="#">Galería</a>
+        <a class="navbar-brand" href="#">Carrito</a>
         <section id="product-grid"></section>
         <section id="product-detail"></section>
         <section id="cart"></section>

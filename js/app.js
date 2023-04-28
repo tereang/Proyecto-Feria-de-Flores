@@ -171,7 +171,7 @@ function removeRamos() {
 }
 
 // Change of products quantity
-function qtyRamos() {
+function cantidadRamos() {
   let cantidadInputs = document.getElementsByClassName("chanceCantidad");
   for (let i = 0; i < cantidadInputs.length; i++) {
     let cantidadInputs = cantidadInputs[i];
@@ -218,7 +218,7 @@ function updateCartTotal() {
     }
     if (total == 0) {
       document.getElementById('total').innerHTML = `<h3>$${Intl.NumberFormat("es-CL").format(total)}</h3>`;
-      document.getElementsByClassName('cart-ramos')[0].innerHTML = `<div>Tienes ${ramoContent.length} productos en tu carro</div>`;
+      document.getElementsByClassName('cart-ramos')[0].innerHTML = `<div>Tienes ${ramoContent.length} ramos en tu carro</div>`;
       document.getElementById('ramos-in-cart-nav').innerHTML = 
         `<div class="bg-danger rounded-circle h-75 ps-2" style="width:25px" id="ramos-in-cart-nav">${ramoContent.length}</div>`;
     }

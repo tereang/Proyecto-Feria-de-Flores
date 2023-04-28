@@ -1,4 +1,4 @@
-export default class Ramo {
+export default class ramos {
   constructor(id, descripcion, imagen, precio, stock) {
     (this.id = id),
       (this.descripcion = descripcion),
@@ -7,7 +7,7 @@ export default class Ramo {
       (this.stock = stock);
   }
 
-  getRamo() {
+  getRamos() {
     return this.brand + " " + this.descripcion;
   }
 }
