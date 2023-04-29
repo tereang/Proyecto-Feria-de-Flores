@@ -74,7 +74,82 @@ module.exports = router;
 //})
 //})
 
+//Construyendo carrito de compras
+
+const	formRamos	=	document.querySelector('#form-ramos');			
+const	carrito	=	document.querySelector('#carrito');			
+const	total	=	document.querySelector('#total');			
+const	botonComprar	=	document.querySelector('#boton-comprar');			
+						
+let	ramos	=	[];			
+let	totalCompra	=	0;			
+						
+formRamos.addEventListener('submit',	agregarRamos);					
+botonComprar.addEventListener('click',	comprarRamos);					
+
+//function agregarProducto(evento) {							
+  evento.preventDefault();							
+							
+  const ramo = document.querySelector('#ramos').value;							
+  const precio = parseFloat(document.querySelector('#precio').value);							
+  const cantidad = parseInt(document.querySelector('#cantidad').value);							
+							
+  const item = {							
+    ramos: ramos,							
+    precio: precio,							
+    cantidad: cantidad							
+  };							
+							
+  ramos.push(item);							
+							
+  mostrarRamos();							
+						
+function agregarRamos(evento) {							
+  evento.preventDefault();							
+							
+  const ramos = document.querySelector('#ramos').value;							
+  const precio = parseFloat(document.querySelector('#precio').value);							
+  const cantidad = parseInt(document.querySelector('#cantidad').value);							
+							
+  const item = {							
+    ramos: ramo,							
+    precio: precio,							
+    cantidad: cantidad							
+  };							
+							
+  ramos.push(item);							
+							
+  mostrarRamos();							
+}							
+							
+function mostrarRamos() {							
+  carrito.innerHTML = '';							
+							
+  ramos.forEach(function(item) {							
+    const li = document.createElement('li');							
+    li.textContent = `${item.ramos} - Precio: ${item.precio} - Cantidad: ${item.cantidad}`;							
+    carrito.appendChild(li);							
+  });							
+							
+  actualizarTotal();							
+}							
+							
+function actualizarTotal() {							
+  totalCompra = 0;							
+							
+  ramos.forEach(function(item) {							
+    totalCompra += item.precio * item.cantidad;							
+  });							
+							
+  total.textContent = totalCompra.toFixed(2);							
+}							
+							
+function comprarRamos() {							
+  alert(`Has comprado ${ramos.length} productos por un total de ${totalCompra.toFixed(2)} pesos.`);							
+  ramos = [];							
+  mostrarRamos();							
+}							
+
 app.listen(port, () => {
   console.log  (`servidor en puerto ${port}`)
 })
-
