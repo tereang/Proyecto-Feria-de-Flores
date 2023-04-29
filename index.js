@@ -77,6 +77,7 @@ router.get('/', (req, res) => {
     });							
 });		
 
+//abrir ventanas en página principal
 app.get('/carrito', (req, res) => {	
   res.render("carrito.hbs")
 });

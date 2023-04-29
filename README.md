@@ -21,7 +21,7 @@
 *** 4-Se crea Carpeta Views con un archivo index.hbs(para extraer y separar instalaciones) y una sub Carpeta Partials en donde se instalan los archivos separados individualmente de archivo principal index.hbs(footer, carrousel etc.)
 *** 5-En Carpeta index.js se generan las constantes y app,para hacer las diferentes llamadas para los requerimientos como HBS, POSTGRES y GET para traer desde API los resultados de "ramos"(productos).
 *** 6- Feria de Flores está ubicada en puerto 3000(nodemon index)
-*** 7-Se crea BD(postgres-puerto 5432), donde se insertan Tabla Ramos y los valores correspondientes a cada uno de los 19 productos y aparece filtro de búsqueda ascendente, se inserta Tabla Categoría y sus valores para generar un inner join entre ambas.
+*** 7-Se crea BD(postgres-puerto 5432), donde se insertan Tabla Ramos y los valores correspondientes a cada uno de los 19 productos y aparece filtro de búsqueda ascendente, se inserta Tabla Categorías y sus valores para generar un inner join entre ambas.
 *** 8-Se instala POSTMAN('API/v1/ramos'), para creación de API FERIA DE FLORES, se ingresan los datos de los ramos(productos) y se abre una nueva Carpeta instalando express, dg y pg para su funcionamiento.Se crea una Carpeta llamada src y una sub carpeta de nombre routes la que contiene 2 archivos: 
 a- index.js que contiene las constantes y las app.
 b- ramos.js que contiene las constantes que nos conectaran con la BD y router.get, router.post, router.put, router.delete, en puerto 4000(node src index.js)
