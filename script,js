@@ -1,4 +1,4 @@
-/*const	formRamos	=	document.querySelector('#form-ramos');			
+const	formRamos	=	document.querySelector('#form-ramos');			
 const	carrito	=	document.querySelector('#carrito');			
 const	total	=	document.querySelector('#total');			
 const	botonComprar	=	document.querySelector('#boton-comprar');			
@@ -24,7 +24,7 @@ botonComprar.addEventListener('click',	comprarRamos);
 							
   ramos.push(item);							
 							
-  mostrarRamos();	*/						
+  mostrarRamos();					
 						
 							
 /*function mostrarProductos() {							

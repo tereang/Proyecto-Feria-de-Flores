@@ -1,15 +1,32 @@
 const express = require ("express")
+const app = express()
+const exphbs  = require('express-handlebars');
 const hbs = require ("hbs")
 const fs = require ("fs")
 const { error } = require("console")
 const router = express.Router();							
-//const db = require('../db');			
+//const db = require('../db');		
+
+
+
+
+// Configurar el motor de plantillas
+app.engine(
+  ".hbs",
+  exphbs({
+    defaultLayout: "main",
+    extname: ".hbs",
+    partialsDir: "views/partials/",
+  
+  })
+);
+
 
 hbs.registerPartials(__dirname +"/views/partials")
 
 
 
-const app = express()
+
 const port = 3000
 const Pool = require('pg').Pool
 const pool = new Pool({
@@ -46,6 +63,7 @@ app.get ('/', async function(req, res){
 
 				
 router.get('/', (req, res) => {	
+
   
     pool.query('SELECT * FROM ramos INNER JOIN categorias on categorias.id = ramos.id_categoria WHERE stock > 0 and es_activa = TRUE	ORDER BY precio ASC', (err, results) => {							
         if (err) {							
@@ -57,8 +75,17 @@ router.get('/', (req, res) => {
             res.render('index.hbs', {ramos: results});							
         }							
     });							
-});							
-							
+});		
+
+app.get('/carrito', (req, res) => {	
+  res.render("carrito.hbs")
+});
+		
+app.get('/historias', (req, res) => {	
+  res.render("historias.hbs")
+});
+
+
 module.exports = router;							
 
 
@@ -74,7 +101,7 @@ module.exports = router;
 //})
 //})
 
-//Construyendo carrito de compras
+/*Construyendo carrito de compras
 
 const	formRamos	=	document.querySelector('#form-ramos');			
 const	carrito	=	document.querySelector('#carrito');			
@@ -148,7 +175,7 @@ function comprarRamos() {
   alert(`Has comprado ${ramos.length} productos por un total de ${totalCompra.toFixed(2)} pesos.`);							
   ramos = [];							
   mostrarRamos();							
-}							
+}		*/					
 
 app.listen(port, () => {
   console.log  (`servidor en puerto ${port}`)
